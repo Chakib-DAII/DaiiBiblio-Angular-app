@@ -1,0 +1,31 @@
+<div id="container">
+  <mat-progress-bar *ngIf="loading" mode="indeterminate"></mat-progress-bar>
+  <div
+    ng2-carouselamos
+    class="slides-wrapper"
+    [items]="books"
+    [width]="900"
+    [$prev]="prev"
+    [$next]="next"
+    [$item]="item"
+  >
+  </div>
+
+
+  <ng-template #prev>
+    <span class="glyphicon glyphicon-chevron-left" id="left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </ng-template>
+  <ng-template #next>
+    <span class="glyphicon glyphicon-chevron-right"  id="right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </ng-template>
+
+  <ng-template #item let-item let-i="index">
+
+    <div class="items">
+      <img src="{{ item.photo }}">
+    </div>
+
+  </ng-template>
+</div>

@@ -1,0 +1,42 @@
+{
+  "header": {
+    "welcome": "Welcome",
+    "books": "Books",
+    "signup": "Create account",
+    "signin": "Sign in ",
+    "signout": "Sign out"
+  },
+  "footer":{
+    "copyright" : "Copyright 2018",
+    "name" : "DAII-Chakib"
+  },
+  "booklist": {
+    "newbook": "New Book",
+    "books": "Your Books"
+  },
+  "singlebook" : {
+    "back" :"Back",
+    "delete": "Delete"
+  },
+  "bookform" :{
+    "createnew" : "Add a new book",
+    "title" : "Title",
+    "author" : "Author",
+    "Image" : "Image",
+    "pdf" : "PDF",
+    "done" : "File Uploaded !",
+    "save" : "Save"
+  },
+  "signin":{
+  "sign": "Sign in",
+  "email": "Email",
+  "password" : "Password",
+  "connect" : "Connexion"
+  },
+  "signup":{
+  "sign": "Create an account",
+  "email": "Email",
+  "password" : "Password",
+  "connect" : "Create account"
+}
+}

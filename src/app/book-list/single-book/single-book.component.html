@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-xs-4">
+    <mat-spinner *ngIf="loading" ></mat-spinner>
+    <img style="max-width: 300px" *ngIf="book.photo" [src]="book.photo" alt="Loading ... ">
+    <h1> {{ book.title }} </h1>
+    <h3> {{ book.author }}</h3>
+    <button class="btn btn-default" (click)="onBack()">{{ 'singlebook.back' | translate}}</button>
+    <button class="btn btn-danger" (click)="onDeleteBook(book)">{{ 'singlebook.delete' | translate}}</button>
+  </div>
+  <div class="col-xs-8 pre-scrollable" style="max-height: 800px">
+    <mat-spinner *ngIf="loading" ></mat-spinner>
+    <pdf-viewer *ngIf="book.pdf" [src]="book.pdf"
+                [render-text]="true"
+                style="display: block;"></pdf-viewer>
+  </div>
+</div>

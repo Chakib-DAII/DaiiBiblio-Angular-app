@@ -1,0 +1,43 @@
+{
+  "header": {
+    "welcome": "Accueil",
+    "books": "Livres",
+    "signup": "Créer un compte",
+    "signin": "Connexion",
+    "signout": "Déconnexion"
+  },
+  "footer":{
+    "copyright" : "Droit d'auteur 2018",
+    "name" : "DAII-Chakib"
+  },
+  "booklist": {
+    "newbook": "Nouveau livre",
+    "books": "Vos livres"
+  },
+  "singlebook" : {
+    "back" :"Retour",
+    "delete": "Supprimer"
+  },
+  "bookform" :{
+    "createnew" : "Créer un nouveau Livre",
+    "title" : "Titre",
+    "author" : "Auteur",
+    "Image" : "Image",
+    "pdf" : "PDF",
+    "done" : "Fichier chargé !",
+    "save" : "Enregistrer"
+  },
+  "signin":{
+    "sign": "Connexion",
+    "email": "Adresse électronique",
+    "password" : "Mot de passe",
+    "connect" : "Connexion"
+  },
+  "signup":{
+    "sign": "Créer un Compte",
+    "email": "Adresse électronique",
+    "password" : "Mot de passe",
+    "connect" : "Créer mon Compte"
+  }
+}
+

@@ -1,0 +1,19 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+        <li routerLinkActive="true"><a routerLink="welcome">{{ 'header.welcome' | translate }}</a></li>
+        <li routerLinkActive="true"><a routerLink="books">{{ 'header.books' | translate }}</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li routerLinkActive="true" *ngIf="!isAuth">
+        <a routerLink="auth/signup">{{ 'header.signup' | translate }}</a>
+      </li>
+      <li routerLinkActive="true" *ngIf="!isAuth">
+        <a routerLink="auth/signin" >{{ 'header.signin' | translate }}</a>
+      </li>
+      <li routerLinkActive="true" *ngIf="isAuth" >
+        <a (click)="onSignOut()" style="cursor: pointer">{{ 'header.signout' | translate }}</a>
+      </li>
+    </ul>
+  </div>
+</nav>

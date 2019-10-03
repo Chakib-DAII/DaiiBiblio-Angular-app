@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="col-xs-12">
+    <button class="btn btn-primary center-block" (click)="onNewBook()">{{ 'booklist.newbook' | translate }}</button>
+    <h2>{{ 'booklist.books' | translate }}</h2>
+    <mat-progress-bar *ngIf="loading" mode="indeterminate"></mat-progress-bar>
+    <div class="list-group">
+      <button class="list-group-item"
+              *ngFor="let book of books | paginate:{ itemsPerPage:5,currentPage:p}; let i = index" (click)="onViewBook(i)">
+        <h3 class="list-group-item-heading">
+          {{ book.title }}
+          <button class="btn btn-default pull-right" (click)="onDeleteBook(book)">
+            <span class="glyphicon glyphicon-minus"></span>
+          </button>
+        </h3>
+        <p class="list-group-item-text">{{ book.author }}</p>
+      </button>
+    </div>
+    <pagination-controls class="pagination" (pageChange)="p = $event"></pagination-controls>
+  </div>
+</div>
